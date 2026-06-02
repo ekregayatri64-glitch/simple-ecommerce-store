@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<button onclick="getMessage()">
+  Get Backend Message
+</button>
+
+<h2 id="message"></h2>
+
+<h1>Simple E-commerce Store</h1>
+
+<h2 id="cart">Cart Items: 0</h2>
+<h2 id="total">Total Price: ₹0</h2>
+
+<div class="navbar">
+<button onclick="logout()">
+Logout
+</button>
+  <h2>🛒 My Store</h2>
+<h3 id="welcome"></h3>
+  <div class="nav-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="cart.html">🛍️ Cart</a>
+    <a href="login.html">👤 Login</a>
+    <a href="register.html">📝 Register</a>
+  </div>
+
+</div>
+<a href="login.html">Login</a>
+<div class="container">
+
+  <!-- Product 1 -->
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200">
+    <h2>Shoes</h2>
+    <p>Price: ₹999</p>
+
+    <button onclick="addToCart(999)">
+      Add to Cart
+    </button>
+    <button onclick="viewDetails('Shoes',999)">
+  View Details
+</button>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=200">
+    <h2>Watch</h2>
+    <p>Price: ₹1499</p>
+
+    <button onclick="addToCart(1499)">
+      Add to Cart
+    </button>
+    <button onclick="viewDetails('Watch',1499)">
+  View Details
+</button>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=200">
+    <h2>Bag</h2>
+    <p>Price: ₹799</p>
+
+    <button onclick="addToCart(799)">
+      Add to Cart
+    </button>
+    <button onclick="viewDetails('Bag',799)">
+  View Details
+</button>
+  </div>
+
+ 
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

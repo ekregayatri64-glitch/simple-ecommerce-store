@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="product">
+
+  <h1 id="name"></h1>
+
+  <img id="productImage" width="200">
+
+  <h2 id="price"></h2>
+
+  <button onclick="window.location.href='index.html'">
+    Back to Home
+  </button>
+
+</div>
+
+<script>
+
+let name = localStorage.getItem("productName");
+
+document.getElementById("name").innerText = name;
+
+document.getElementById("price").innerText =
+"Price: ₹" + localStorage.getItem("productPrice");
+
+if(name === "Watch"){
+  document.getElementById("productImage").src =
+  "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=300";
+}
+
+if(name === "Shoes"){
+  document.getElementById("productImage").src =
+  "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300";
+}
+
+if(name === "Bag"){
+  document.getElementById("productImage").src =
+  "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=300";
+}
+
+</script>
+
+</body>
+
+</html>
